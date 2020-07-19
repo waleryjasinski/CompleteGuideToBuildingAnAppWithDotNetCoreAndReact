@@ -14,3 +14,7 @@ dotnet new webapi -n API
  dotnet add reference ..\Domain\  
 ...
 
+dotnet tool install --global dotnet-ef
+
+
+dotnet ef migrations add InitialCreate -p .\Persistence\ -s .\API\
