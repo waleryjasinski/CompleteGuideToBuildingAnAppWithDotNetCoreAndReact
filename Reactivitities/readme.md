@@ -8,7 +8,9 @@ dotnet new webapi -n API
  dotnet sln h
  dotnet sln add .\Domain\Domain.csproj
  ...
-
  dotnet sln list 
 
- 
+ cd .\Application\ 
+ dotnet add reference ..\Domain\  
+...
+
