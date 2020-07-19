@@ -18,3 +18,7 @@ dotnet tool install --global dotnet-ef
 
 
 dotnet ef migrations add InitialCreate -p .\Persistence\ -s .\API\
+
+dotnet ef database update
+
+dotnet watch run
